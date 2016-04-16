@@ -26,23 +26,9 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 font-family: myfont;  
 position: relative; 
 color: #333333;
-border-radius: 50px;
 margin-right: 40px;
 margin-left: 40px;
 margin-top: 50px;
-}
-form h1 { 
-background: #0066ff; 
-padding-top: 10px;
-padding-bottom: 40px; 
-color: white; 
-font-size: 2em;
-font-weight: 600; 
-height: 20px;
-text-align: center;
-margin-top: 0;
-border-top-left-radius: 50px;
-border-top-right-radius: 50px;
 }
 form label {
 margin-left: 20px;
@@ -101,37 +87,17 @@ font-weight: 600;
 <body>
 <div id="banner">
 <div id="banner-content">
-Students Club Management System
+Finance
 </div>
 </div>
-<form method="POST" action ="signup.php">
-  <h1>Sign Up</h1>
-  <label>Register Number</label>
-  <input type="text" name="regno" required/>
-  <label>Name</label>
+<form>
+  <label>Name of the Event</label>
   <input type="text" name="name" required/>
-  <label>Phone Number</label>
-  <input type="tel" name="number" required/>
-  <label>Email Id</label>
-  <input type="email" name="email" required/>
-  
-  <label>Role</label>
-  <select name ="role" required>
-  <option value="Board">Board</option> 
-  <option value="Core">Core</option>
-  </select>
-  
-  <label>Password</label>
-  <input type="password" name="password" required/>
-  <button type="submit">Sign Up</button>
-</form>
-<form method ="POST" action ="login.php">
-  <h1>Log In</h1>
-  <label>Username ( Use your Register Number )</label>
-  <input type="text" name="username" required/>
-  <label>Password</label>
-  <input type="password" name="password" required/>
-  <button type="submit">Log In</button>
+  <label>Bill Amount</label>
+  <input type="text" name="amount" required/>
+  <label>Upload the Bill Image</label>  
+  <input type="file" accept="image/*" name="fileUploader" required/>
+  <button type="submit">Submit</button>
 </form>
 </body>
 </html>
